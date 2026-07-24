@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-note">
+      <svg class="footer-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.6 9.4 22.5 12 14.6 14.6 12 22.5 9.4 14.6 1.5 12 9.4 9.4Z" fill="currentColor"/></svg>
+      <p>Bu site, umre ibadetini kolaylaştırmak niyetiyle hazırlanmış ücretsiz bir hizmettir. Ticari bir amacı yoktur; hiçbir acente, otel veya firma ile bağlantısı bulunmaz.</p>
+      <p>Fıkhî bilgiler Diyanet İşleri Başkanlığı kaynakları esas alınarak derlenmiştir. İstifade ederseniz, hazırlayanları duanızda anmanız yeterlidir.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Alt menü">
+      {{ range site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+    </nav>
+    <p class="footer-legal">bireyselumre.org · Bilgiler genel rehberlik amaçlıdır; resmî işlemler için güncel kaynakları teyit ediniz.</p>
+  </div>
+</footer>

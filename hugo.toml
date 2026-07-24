@@ -1,0 +1,30 @@
+baseURL = "https://bireyselumre.org/"
+languageCode = "tr-tr"
+title = "Bireysel Umre"
+defaultContentLanguage = "tr"
+hasCJKLanguage = false
+enableRobotsTXT = true
+
+[params]
+  description = "Umreye acentesiz, kendi planınızla gitmek için adım adım rehber. Vize, bilet, konaklama, ulaşım ve ibadet — hepsi tek yerde, tamamen ücretsiz."
+
+[menus]
+  [[menus.main]]
+    name = "Yol Haritası"
+    pageRef = "/rehber"
+    weight = 10
+  [[menus.main]]
+    name = "İbadet Rehberi"
+    pageRef = "/ibadet"
+    weight = 20
+  [[menus.main]]
+    name = "Sık Sorulanlar"
+    pageRef = "/sss"
+    weight = 30
+  [[menus.main]]
+    name = "Hakkında"
+    pageRef = "/hakkinda"
+    weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true

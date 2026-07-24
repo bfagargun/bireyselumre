@@ -1,0 +1,205 @@
+/* ============================================================
+   Bireysel Umre — tasarım sistemi
+   Palet: beyaz + yeşil (Medine yeşili), ferah ve sade
+   Yazı: Fraunces (başlık) + Figtree (metin)
+   ============================================================ */
+
+:root {
+  --bg: #FDFDFB;
+  --surface: #F0F6F1;
+  --line: #DCE8DF;
+  --green-900: #10382B;
+  --green-700: #1C6B4F;
+  --green-500: #2E8B67;
+  --green-100: #E3EFE7;
+  --ink: #22322B;
+  --muted: #5E7268;
+  --radius: 14px;
+  --wrap: 1080px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Figtree", -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 1.25rem; }
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.2; color: var(--green-900); }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.5rem, 3.4vw, 2rem); }
+h3 { font-size: 1.2rem; }
+a { color: var(--green-700); }
+p { margin: 0 0 1rem; }
+
+/* ---------- Üst menü ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(253, 253, 251, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 1rem; }
+.brand {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
+  color: var(--green-900); text-decoration: none;
+}
+.brand-mark { width: 20px; height: 20px; color: var(--green-700); }
+.site-nav { display: flex; gap: 1.4rem; }
+.site-nav a {
+  color: var(--ink); text-decoration: none; font-weight: 500; font-size: 0.95rem;
+  padding: 0.35rem 0; border-bottom: 2px solid transparent;
+}
+.site-nav a:hover, .site-nav a.active { color: var(--green-700); border-bottom-color: var(--green-500); }
+.nav-toggle, .nav-toggle-label { display: none; }
+
+@media (max-width: 760px) {
+  .nav-toggle-label {
+    display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px;
+  }
+  .nav-toggle-label span { width: 22px; height: 2px; background: var(--green-900); border-radius: 2px; }
+  .site-nav {
+    display: none; position: absolute; top: 64px; left: 0; right: 0;
+    flex-direction: column; gap: 0; background: var(--bg);
+    border-bottom: 1px solid var(--line); padding: 0.5rem 1.25rem 1rem;
+  }
+  .nav-toggle:checked ~ .site-nav { display: flex; }
+  .site-nav a { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
+}
+
+/* ---------- Hero ---------- */
+.hero { padding: clamp(3rem, 8vw, 5.5rem) 0 clamp(2.5rem, 6vw, 4rem); }
+.hero-grid { display: grid; gap: 2.5rem; align-items: center; }
+.hero .eyebrow {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--green-700); margin-bottom: 1rem;
+}
+.hero .eyebrow::before { content: "✦"; font-size: 0.8rem; }
+.hero p.lede { font-size: 1.2rem; color: var(--muted); max-width: 34em; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.6rem; }
+
+.btn {
+  display: inline-block; text-decoration: none; font-weight: 600; font-size: 1rem;
+  padding: 0.8rem 1.5rem; border-radius: 999px; transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn-primary { background: var(--green-700); color: #fff; }
+.btn-primary:hover { background: var(--green-900); transform: translateY(-1px); }
+.btn-ghost { color: var(--green-700); border: 1.5px solid var(--green-500); }
+.btn-ghost:hover { background: var(--green-100); }
+
+/* ---------- Değer önerileri ---------- */
+.values { background: var(--surface); border-block: 1px solid var(--line); padding: clamp(2.5rem, 6vw, 4rem) 0; }
+.values-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.value-card h3 { margin: 0.4rem 0 0.5rem; }
+.value-card p { color: var(--muted); margin: 0; font-size: 0.98rem; }
+.value-card .glyph {
+  width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+  background: var(--green-100); color: var(--green-700); font-size: 1.2rem;
+}
+
+/* ---------- Yol haritası (imza öğe) ---------- */
+.journey { padding: clamp(3rem, 7vw, 5rem) 0; }
+.journey-head { max-width: 40em; margin-bottom: 2.5rem; }
+.journey-head p { color: var(--muted); }
+.journey-list { list-style: none; margin: 0; padding: 0; position: relative; }
+.journey-list::before {
+  content: ""; position: absolute; left: 21px; top: 12px; bottom: 12px;
+  width: 2px; background: linear-gradient(var(--green-500), var(--green-100));
+}
+.journey-item { position: relative; padding: 0 0 1.9rem 4rem; }
+.journey-item:last-child { padding-bottom: 0; }
+.journey-item .node {
+  position: absolute; left: 0; top: 0;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--green-500);
+  display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 600; color: var(--green-700);
+}
+.journey-item h3 { margin: 0.35rem 0 0.3rem; }
+.journey-item h3 a { color: inherit; text-decoration: none; }
+.journey-item h3 a:hover { color: var(--green-700); }
+.journey-item p { color: var(--muted); margin: 0; max-width: 44em; }
+.journey-item .soon {
+  display: inline-block; font-size: 0.78rem; font-weight: 600;
+  color: var(--muted); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: 0.1rem 0.6rem; margin-left: 0.5rem; vertical-align: middle;
+}
+
+/* ---------- Bölüm kartları ---------- */
+.sections { padding: 0 0 clamp(3rem, 7vw, 5rem); }
+.sections-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.section-card {
+  display: block; text-decoration: none; color: inherit;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.6rem; transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.section-card:hover {
+  border-color: var(--green-500); transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16, 56, 43, 0.08);
+}
+.section-card h3 { margin: 0 0 0.4rem; }
+.section-card p { color: var(--muted); margin: 0; font-size: 0.97rem; }
+.section-card .go { display: inline-block; margin-top: 0.9rem; font-weight: 600; color: var(--green-700); font-size: 0.95rem; }
+
+/* ---------- İçerik sayfaları ---------- */
+.page { padding: clamp(2.5rem, 6vw, 4rem) 0; }
+.page-narrow { max-width: 46rem; }
+.page .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.6rem; }
+.prose h2 { margin-top: 2.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.prose h3 { margin-top: 1.8rem; }
+.prose ul, .prose ol { padding-left: 1.3rem; }
+.prose li { margin-bottom: 0.4rem; }
+.prose blockquote {
+  margin: 1.5rem 0; padding: 1rem 1.3rem;
+  background: var(--surface); border-left: 3px solid var(--green-500); border-radius: 0 10px 10px 0;
+  color: var(--green-900);
+}
+.prose blockquote p:last-child { margin-bottom: 0; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.97rem; }
+.prose th, .prose td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); }
+.prose th { color: var(--green-900); background: var(--surface); }
+
+.callout {
+  display: grid; grid-template-columns: auto 1fr; gap: 0.8rem;
+  background: var(--green-100); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1rem 1.2rem; margin: 1.5rem 0;
+}
+.callout::before { content: "✦"; color: var(--green-700); }
+
+/* ---------- Liste sayfaları ---------- */
+.list-grid { display: grid; gap: 1.2rem; margin-top: 2rem; }
+.list-item {
+  display: block; text-decoration: none; color: inherit;
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem;
+  transition: border-color 0.15s ease;
+}
+.list-item:hover { border-color: var(--green-500); }
+.list-item h3 { margin: 0 0 0.25rem; }
+.list-item p { margin: 0; color: var(--muted); font-size: 0.96rem; }
+
+/* ---------- Alt bilgi ---------- */
+.site-footer { background: var(--green-900); color: #DCEBE2; margin-top: 2rem; }
+.footer-inner { padding: 2.8rem 1.25rem 2rem; display: grid; gap: 1.4rem; }
+.footer-note { max-width: 46em; }
+.footer-note p { color: #BFD9CB; font-size: 0.95rem; margin-bottom: 0.6rem; }
+.footer-mark { width: 18px; height: 18px; color: #7FBFA3; margin-bottom: 0.6rem; }
+.footer-nav { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+.footer-nav a { color: #DCEBE2; text-decoration: none; font-size: 0.92rem; font-weight: 500; }
+.footer-nav a:hover { color: #fff; text-decoration: underline; }
+.footer-legal { color: #7FA791; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 1.2rem; margin: 0; }
