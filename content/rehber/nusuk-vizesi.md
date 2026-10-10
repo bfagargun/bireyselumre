@@ -19,7 +19,7 @@ Türkiye'den bireysel gidenler için iki temel yol vardır:
 | **Geçerlilik** | 1 yıla kadar, çok girişli | Tek giriş, sınırlı süre |
 | **Kalış süresi** | 90 güne kadar | Yaklaşık 30 gün |
 
-Bireysel gidenlerin büyük çoğunluğu **turist e-vizesi** kullanır. Bu vize ile umre yapmak mümkündür; ayrıca aynı vizeyle ileride tekrar gidebilirsiniz.
+Bireysel gidenlerin büyük çoğunluğu **turist e-vizesi** kullanır. Bu vize ile umre yapmak mümkündür; ayrıca aynı vizeyle ileride tekrar gidebilirsiniz. 2026'da gelen kural değişikliğiyle klasik umre vizesi başvuruları Nusuk onaylı otel ve ulaşım rezervasyonuna bağlanmıştır; bu da turist e-vizesini bireysel gidenler için daha da pratik hale getirmektedir.
 
 ## Gerekli belgeler
 

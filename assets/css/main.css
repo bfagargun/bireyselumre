@@ -143,7 +143,7 @@ p { margin: 0 0 1rem; }
 
 /* ---------- Bölüm kartları ---------- */
 .sections { padding: 0 0 clamp(3rem, 7vw, 5rem); }
-.sections-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.sections-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 .section-card {
   display: block; text-decoration: none; color: inherit;
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
@@ -203,3 +203,54 @@ p { margin: 0 0 1rem; }
 .footer-nav a { color: #DCEBE2; text-decoration: none; font-size: 0.92rem; font-weight: 500; }
 .footer-nav a:hover { color: #fff; text-decoration: underline; }
 .footer-legal { color: #7FA791; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 1.2rem; margin: 0; }
+
+/* ---------- Hero süslemesi: soluk yıldız ---------- */
+.hero { position: relative; overflow: hidden; }
+.hero .wrap { position: relative; }
+.hero::after {
+  content: ""; position: absolute; top: -70px; right: -70px;
+  width: 420px; height: 420px; pointer-events: none; opacity: 0.06;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1.5 14.6 9.4 22.5 12 14.6 14.6 12 22.5 9.4 14.6 1.5 12 9.4 9.4Z" fill="%231C6B4F"/></svg>') no-repeat center / contain;
+}
+
+/* ---------- Hadis şeridi ---------- */
+.hadith { padding: clamp(2.5rem, 6vw, 4rem) 0 0.5rem; }
+.hadith blockquote { margin: 0 auto; max-width: 36em; text-align: center; }
+.hadith blockquote p {
+  font-family: var(--font-display); font-size: clamp(1.25rem, 3vw, 1.7rem);
+  color: var(--green-900); line-height: 1.45; margin: 0 0 0.7rem;
+}
+.hadith blockquote p::before, .hadith blockquote p::after { content: " ✦ "; color: var(--green-500); font-size: 0.7em; vertical-align: middle; }
+.hadith cite { font-style: normal; font-size: 0.88rem; color: var(--muted); letter-spacing: 0.04em; }
+
+/* ---------- Yol haritası ek bağlantıları ---------- */
+.journey-extra { margin: 2.2rem 0 0 4rem; color: var(--muted); font-size: 0.95rem; }
+.journey-extra a { font-weight: 600; text-decoration: none; }
+.journey-extra a:hover { text-decoration: underline; }
+@media (max-width: 600px) { .journey-extra { margin-left: 0; } }
+
+/* ---------- Arapça dua tipografisi ---------- */
+.prose .arabic {
+  font-family: "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+  direction: rtl; text-align: center;
+  font-size: 1.75rem; line-height: 2.3;
+  color: var(--green-900);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.1rem 1.3rem; margin: 1.4rem 0 0.7rem;
+}
+.prose .okunus { text-align: center; color: var(--green-700); font-style: italic; margin: 0 0 0.35rem; }
+.prose .meal { text-align: center; color: var(--muted); font-size: 0.97rem; max-width: 36em; margin: 0 auto 1.4rem; }
+
+/* ---------- Mobilde taşan tablolar ---------- */
+.prose table { display: block; overflow-x: auto; }
+
+/* ---------- Baskı (yazdırılabilir rehber) ---------- */
+@media print {
+  .site-header, .site-footer, .hero-actions, .journey-extra, .nav-toggle-label { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .page { padding: 0; }
+  h1 { font-size: 1.7rem; }
+  a { color: #000; text-decoration: none; }
+  .callout, .prose blockquote, .prose .arabic { background: #fff; border: 1px solid #888; }
+  .prose table { display: table; }
+}

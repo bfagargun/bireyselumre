@@ -9,4 +9,6 @@ Bu site, umre ibadetini kolaylaştırmak ve insanları bireysel umreye teşvik e
 
 Sitenin hazırlanmasında emeği geçenler isimlerinin anılmasını istememektedir. İstifade ettiyseniz, bir Fâtiha ve hayır duası kâfîdir.
 
+**Katkıda bulunmak ister misiniz?** Bu rehberi, umreye niyet eden bir yakınınızla paylaşmanız en güzel katkıdır. Hayra vesile olan, onu yapan gibidir.
+
 > "İnsan öldüğünde ameli kesilir; ancak üç şey müstesna: sadaka-i cariye, kendisinden faydalanılan ilim ve kendisine dua eden salih evlat." (Müslim, Vasiyyet, 14)
