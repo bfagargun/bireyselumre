@@ -1,65 +1,126 @@
 ---
-title: "Hazırlık ve Valiz Listesi"
-summary: "Belgeler, sağlık hazırlığı, telefon uygulamaları ve eksiksiz valiz listesi — yola çıkmadan son kontrol."
+title: "Hazırlık ve Valiz Listesi (İşaretlenebilir)"
+summary: "Belgeler, aşı, ilaç izni, uygulamalar, kondisyon ve eksiksiz valiz listesi — işaretledikleriniz bu cihazda saklanır. Yola çıkmadan son kontrol."
 weight: 60
+lastmod: 2026-10-10
+checklist: true
+kaynaklar:
+  - ad: "Umre Yolcusu Rehberi (8. baskı, 2025)"
+    kurum: "Diyanet İşleri Başkanlığı, Hac ve Umre Hizmetleri Genel Müdürlüğü"
+    url: "https://hacumreegitim.hac.gov.tr/uploads/materials/mat_69c54171a5be3.pdf"
+    not: "Hazırlık: s. 13; ilaçlar ve raporlar: s. 93–94; egzersiz: s. 94–95; bulundurulması faydalı malzemeler: s. 100."
+  - ad: "Hac ve Umre ile İlgili Fetvalar (3. baskı, 2025)"
+    kurum: "Din İşleri Yüksek Kurulu (Diyanet)"
+    url: "https://hacumreegitim.hac.gov.tr/uploads/materials/mat_69c160f1a149b.pdf"
+    not: "Helalleşme: s. 156–157."
+  - ad: "Suudi Arabistan — Seyahat sağlığı bilgisi"
+    kurum: "T.C. Sağlık Bakanlığı, Seyahat Sağlığı"
+    url: "https://www.seyahatsagligi.gov.tr/site/SaglikBilgisi/SAU"
+  - ad: "SFDA kontrollü ilaç izin sistemi"
+    kurum: "Suudi Gıda ve İlaç Kurumu (SFDA)"
+    url: "https://cds.sfda.gov.sa"
+  - ad: "Diyanet Hac Umre Rehberi mobil uygulaması"
+    kurum: "Diyanet İşleri Başkanlığı"
+    url: "https://mobilhizmetler.diyanet.gov.tr/hacumre.html"
+  - ad: "Pratik Arapça Konuşma Rehberi"
+    kurum: "Türkiye Diyanet Vakfı / Diyanet Hac ve Umre Hizmetleri"
+    url: "https://hacumreegitim.hac.gov.tr/uploads/materials/mat_69c16375906ae.pdf"
 ---
 
-Vize, bilet ve otel tamamsa geriye hazırlık kalır. Bu sayfayı yolculuktan bir hafta önce açıp madde madde işaretleyin.
+Vize, bilet ve otel tamamsa geriye hazırlık kalır. Bu sayfayı yolculuktan birkaç hafta önce açıp madde madde işaretleyin. **İşaretleriniz yalnızca bu cihazdaki tarayıcıda saklanır**; dilerseniz sayfayı yazdırıp kâğıt üzerinde de kullanabilirsiniz.
 
-## Belgeler (asıllar + telefonda kopyaları)
+<p><button type="button" id="checklist-reset" class="btn btn-ghost btn-small">İşaretleri temizle</button></p>
 
-- Pasaport (en az 6 ay geçerli)
-- E-vize çıktısı (telefonda PDF'i de dursun)
-- Uçak bileti ve otel rezervasyon onayları
-- Haramain tren bileti (aldıysanız)
-- Seyahat sağlık sigortası poliçesi (e-vizeyle birlikte gelir; kapsamına bir bakın)
-- Kullandığınız ilaçlar için reçete/rapor (özellikle düzenli ilaç kullananlar)
+## 4–6 hafta önce
 
-## Sağlık hazırlığı
+- [ ] Pasaportun en az 6 ay geçerli olduğunu kontrol ettim
+- [ ] Vizemi resmî portaldan aldım ([vize rehberi](/rehber/nusuk-vizesi/))
+- [ ] **Meningokok (ACWY) aşısını** yaptırdım — varıştan en az 10 gün önce olmalı ([sağlık rehberi](/rehber/saglik/)){{< k 3 >}}
+- [ ] Grip aşısı ve rutin aşılarım için hekime danıştım
+- [ ] Kronik hastalığım varsa hekimimden yolculuğa uygunluk ve ilaç planı aldım
+- [ ] Yeşil/kırmızı reçeteli bir ilaç kullanıyorsam **SFDA'dan ilaç izni** aldım (cds.sfda.gov.sa){{< k 4 >}}
+- [ ] Günlük yürüyüşlere başladım — Diyanet'in tavsiyesi: en az 1 saat ya da 5 km'yi dinlenmeden yürüyebilecek hâle gelmek{{< k 1 >}}
+- [ ] Uçak biletimi ve otelimi ayarladım
+- [ ] Umre Yolcusu Rehberi'ni ve Hac ve Umre Duaları kitabını telefonuma indirdim ([Kaynaklar](/kaynaklar/))
 
-Bu bölümün ayrıntılı anlatımı için: [Sağlık rehberi](/rehber/saglik/)
+## 1–2 hafta önce
 
-- **Aşılar:** Hac ve umre yolcuları için menenjit (ACWY) aşısı öteden beri istenen/önerilen aşıdır; güncel zorunluluk durumu vize tipine göre değişebildiğinden başvuru ekranındaki şartları kontrol edin. Grip aşısı da kalabalık ortam için akıllıca bir tedbirdir. Seyahatten 2–3 hafta önce bir sağlık kuruluşuna veya seyahat sağlığı merkezine danışın.
-- **Düzenli ilaçlarınız:** Kalış sürenizden birkaç gün fazlasını, orijinal kutusunda ve el bagajında taşıyın.
-- **Küçük ecza çantası:** Ağrı kesici, ateş düşürücü, ishal/kabızlık ilacı, yara bandı, kişisel ihtiyaçlar. Mekke ve Medine'de eczane boldur; bu çanta "gece yarısı acil ihtiyaç" içindir.
-- **Ayaklarınız en değerli varlığınız:** Tavaf ve sa'y kilometrelerce yürümek demektir. Yolculuktan önce yürüyüşe alışın; su toplamasına karşı yumuşak, **alışılmış** (yeni değil!) bir terlik-sandalet götürün.
-- Kronik hastalığı olanlar (kalp, tansiyon, şeker vb.) yolculuk öncesi hekimlerine danışmalı; sıcak iklim ve yoğun efor için ilaç/takip planını netleştirmelidir.
+- [ ] **Nusuk**'tan umre iznimi ve Ravza randevumu aldım (veya tarihleri belirledim)
+- [ ] Haramain tren biletimi aldım (Medine–Mekke veya Mekke–Cidde Havalimanı)
+- [ ] Kartlarımı yurt dışı kullanımına açtırdım, limitlerimi kontrol ettim
+- [ ] eSIM veya yurt dışı paketimi ayarladım
+- [ ] Uygulamaları kurdum (aşağıdaki liste)
+- [ ] Belgelerimin fotoğraflarını telefona ve buluta kaydettim
+- [ ] Ailem ve yakınlarımla helalleştim; borç ve emanetlerimi düzene koydum{{< k 2 >}}
+
+## Belgeler (asılları + telefonda kopyaları)
+
+- [ ] Pasaport
+- [ ] Vize çıktısı ve PDF'i
+- [ ] Uçak bileti, otel ve tren rezervasyonları
+- [ ] Aşı kartı (meningokok)
+- [ ] Sağlık sigortası poliçesi (vizeyle gelen)
+- [ ] İlaçlar için reçete/rapor; varsa SFDA izin belgesi{{< k 1 >}}
+- [ ] Otel adresi Arapça ve İngilizce yazılı bir kâğıt
+- [ ] [Önemli numaralar](/rehber/onemli-numaralar/) listesi
 
 ## Telefona kurulacak uygulamalar
 
-- **Nusuk** — izinler ve resmî işlemler
-- **HHR (Haramain)** — tren bileti
-- **Careem / Uber** — şehir içi ulaşım
-- **Google Maps** — Harem çevresi ve otel yolu (çevrimdışı harita indirin)
-- Banka uygulamanız (kartları yurt dışına açtırın) ve bir **eSIM** uygulaması (yola çıkmadan paketi alın)
+- [ ] **Nusuk** — umre izni, Ravza randevusu, harita
+- [ ] **HHR Train** — Haramain tren bileti
+- [ ] **Careem** ve/veya **Uber** — şehir içi ulaşım
+- [ ] **Makkah Bus** — Mekke otobüsleri
+- [ ] **Diyanet Hac Umre Rehberi** — sesli ve görüntülü ibadet rehberi{{< k 5 >}}
+- [ ] Google Maps (Mekke ve Medine çevrimdışı haritaları indirildi)
+- [ ] Banka uygulamam ve çeviri uygulaması
 
-## Valiz listesi
+## İlaç ve sağlık çantası
 
-**Giyim (erkek):**
-- İhram seti (2 parça; bir yedek set pratik olur) + ihram kemeri
-- Rahat, hafif günlük kıyafetler; Harem içi için uzun kollu tercih edilebilir
-- Parmak arası olmayan, bantlı terlik/sandalet (ihramlıyken ayağın üst kemikleri açık olmalı — Hanefî mezhebinde topuk ve aşık kemiği açıkta kalacak şekilde)
+Umre Yolcusu Rehberi'nin tavsiyesi: Sürekli kullandığınız ilaçlar oradaki sağlık birimlerinde çoğunlukla bulunmaz; **dönüşünüze kadar yetecek miktarı** yanınıza alın.{{< k 1 >}}
 
-**Giyim (kadın):**
-- Bol ve rahat tesettür kıyafetler (ihram için özel kıyafet şartı yoktur; yüz örtülmez)
-- Hafif bir hırka/şal (klimalı alanlar için)
+- [ ] Düzenli ilaçlarım (kalış süresinden birkaç gün fazla, orijinal kutularında, el bagajında)
+- [ ] Tansiyon/şeker ölçüm cihazı ve çubukları (gerekiyorsa)
+- [ ] Ağrı kesici, ateş düşürücü, ishal ilacı
+- [ ] Yara bandı, kabarcık bandı, pişik kremi
+- [ ] Boğaz pastili, maske, alkolsüz el temizleme jeli
+- [ ] Diş protezi saklama kabı (gerekiyorsa)
 
-**Ortak:**
-- Terlik torbası (Harem'e girerken ayakkabı yanınızda taşınır — küçük bir bez torba çok iş görür)
-- Boyun askılı küçük çanta veya bel çantası (pasaport, telefon, para için)
-- Güneş gözlüğü, şemsiye (güneş için), şapka (ihramsızken)
-- Güneş kremi, kokusuz sabun/şampuan (ihram süresince kokulu ürün kullanılmaz — kokusuz ıslak mendil de dahil)
-- Priz çevirici (Suudi Arabistan'da G tipi/İngiliz priz yaygındır), powerbank
-- Zemzem için katlanır küçük matara (Harem içinde doldurmak için)
-- Küçük dikiş seti, tırnak makası (bagaja!), çamaşır ipi/mandalı (uzun kalışlarda)
+## Giyim — erkek
+
+- [ ] İhram seti (2 parça) + bir yedek set
+- [ ] İhram kemeri (bel çantalı)
+- [ ] Topuk ve ayak üstünü açık bırakan, **alışılmış** bantlı terlik/sandalet
+- [ ] Ortopedik, havadar ayakkabı (ihramsız günler için)
+- [ ] Pamuklu, bol, ince kıyafetler ve pamuklu iç çamaşırı
+- [ ] Hırka veya ince mont (klimalı alanlar ve uçak için)
+
+## Giyim — kadın
+
+- [ ] Bol, rahat, pamuklu tesettür kıyafetleri (özel ihram kıyafeti gerekmez; yüz açık kalır)
+- [ ] Yedek başörtüleri
+- [ ] Çoraplar (lastiği sıkı olmayan) ve rahat, alışılmış ayakkabı
+- [ ] Hafif bir hırka veya şal
+
+## Ortak eşyalar
+
+Diyanet'in "bulundurulması faydalı malzemeler" listesinden ve tecrübeden:{{< k 1 >}}
+
+- [ ] Küçük seccade (mescitte yer bulamazsanız)
+- [ ] Terlik/ayakkabı torbası
+- [ ] Önden taşınan bel veya boyun çantası (pasaport, telefon, para)
+- [ ] Şemsiye, güneş gözlüğü, şapka (ihramsızken)
+- [ ] **Kokusuz** sabun, şampuan, ıslak mendil ve deodorant (ihram süresi için)
+- [ ] Diş fırçası, macun, tarak, tıraş malzemesi, tırnak makası (bagaja)
+- [ ] G tipi priz adaptörü ve powerbank
+- [ ] Katlanır su şişesi (zemzem için)
+- [ ] Küçük dikiş seti, çamaşır ipi ve mandal (uzun kalışlar için)
 
 ## Yola çıkmadan son 48 saat
 
-- Uçuş saatini ve terminali teyit edin; online check-in yapın
-- Otele varış saatinizi bildirin (gece varışlarda önemli)
-- Kartların yurt dışı kullanımını ve limitini kontrol edin
-- Eve dair işleri bağlayın (faturalar, emanetler) — zihniniz orada, kalbiniz ibadette olsun
-- Helalleşin, vasiyetinizi ve varsa borçlarınızı düzene koyun — bu, sünnete uygun ve iç huzuru veren bir hazırlıktır
-- Sevdiklerinizden dua isteyin; umreye gidenin duası makbuldür, siz de onlara dua sözü verin
+- [ ] Uçuş saatini ve terminali teyit ettim, online check-in yaptım
+- [ ] Doğrudan Cidde'ye uçuyorsam ihramı havalimanında giyeceğimi planladım ([mîkat](/ibadet/mikat-ve-ucakta-ihram/))
+- [ ] Otele varış saatimi bildirdim
+- [ ] Umrenin yapılışını bir kez daha okudum ([Umre nasıl yapılır?](/ibadet/umre-nasil-yapilir/))
+- [ ] Sevdiklerimden dua istedim, onlara dua sözü verdim
 
-<div class="callout">Valizin en hafif ama en önemli parçası niyettir. Eşyanız eksik olsa orada tamamlanır; kalbiniz hazırsa umreniz tamamdır.</div>
+<div class="callout">Arapça bilmeniz gerekmez; havalimanı, otel ve Harem çevresinde İngilizce ve çeviri uygulamaları yeterlidir. Merak edenler için Diyanet'in <a href="https://hacumreegitim.hac.gov.tr/uploads/materials/mat_69c16375906ae.pdf" target="_blank" rel="noopener">Pratik Arapça Konuşma Rehberi</a> havalimanı, otel, hastane gibi durumlar için hazır cümleler içerir.{{< k 6 >}} Valizin en hafif ama en önemli parçası niyettir: eşyanız eksik olsa orada tamamlanır; kalbiniz hazırsa umreniz tamamdır.</div>

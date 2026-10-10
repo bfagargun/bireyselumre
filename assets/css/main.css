@@ -176,11 +176,12 @@ p { margin: 0 0 1rem; }
 .prose th { color: var(--green-900); background: var(--surface); }
 
 .callout {
-  display: grid; grid-template-columns: auto 1fr; gap: 0.8rem;
+  position: relative; display: block;
   background: var(--green-100); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 1rem 1.2rem; margin: 1.5rem 0;
+  padding: 1rem 1.2rem 1rem 2.7rem; margin: 1.5rem 0;
 }
-.callout::before { content: "✦"; color: var(--green-700); }
+.callout::before { content: "✦"; color: var(--green-700); position: absolute; left: 1.1rem; top: 1rem; }
+.callout p:last-child { margin-bottom: 0; }
 
 /* ---------- Liste sayfaları ---------- */
 .list-grid { display: grid; gap: 1.2rem; margin-top: 2rem; }
@@ -305,7 +306,7 @@ sup.ref a::before { content: "["; } sup.ref a::after { content: "]"; }
 
 /* ---------- Bilgi kutusu türleri ---------- */
 .callout.warn { background: #FFF6E5; border-color: #F0DDB4; }
-.callout.warn::before { content: "!"; font-weight: 700; color: #A86A00; }
+.callout.warn::before { content: "!"; font-weight: 700; color: #A86A00; left: 1.25rem; }
 
 /* ---------- Kaynak/video kartları ---------- */
 .res-list { list-style: none; padding: 0 !important; display: grid; gap: 0.8rem; }
@@ -331,3 +332,18 @@ sup.ref a::before { content: "["; } sup.ref a::after { content: "]"; }
   .toc, .pager, .crumbs, .btn-small { display: none !important; }
   .sources a::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #444; }
 }
+
+/* ---------- Ana sayfa: kitap şeridi ---------- */
+.books { background: var(--surface); border-block: 1px solid var(--line); padding: clamp(2.5rem, 6vw, 4rem) 0; }
+.books h2 { margin: 0 0 1.4rem; }
+.books-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.book {
+  display: flex; flex-direction: column; gap: 0.35rem; text-decoration: none; color: inherit;
+  background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--green-500);
+  border-radius: var(--radius); padding: 1.2rem 1.3rem; transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.book:hover { border-color: var(--green-500); transform: translateY(-2px); }
+.book strong { font-family: var(--font-display); font-size: 1.15rem; color: var(--green-900); }
+.book span { color: var(--muted); font-size: 0.95rem; }
+.book .book-tag { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--green-700); }
+.value-card p a { font-weight: 600; }

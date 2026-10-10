@@ -19,9 +19,9 @@ kaynaklar:
   - ad: "Seyahat öncesi önerilen aşılar"
     kurum: "T.C. Sağlık Bakanlığı, Seyahat Sağlığı"
     url: "https://www.seyahatsagligi.gov.tr/Site/Asilar"
-  - ad: "Kontrollü ilaçlar için ön izin (clearance) duyurusu"
-    kurum: "Suudi Gıda ve İlaç Kurumu (SFDA)"
-    url: "https://www.sfda.gov.sa/en/news/5521869"
+  - ad: "SFDA, kontrollü ilaç taşıyan hacılar için kuralları açıkladı (Mayıs 2026)"
+    kurum: "Gulf News"
+    url: "https://gulfnews.com/world/gulf/saudi/saudi-arabia-sets-rules-for-pilgrims-carrying-controlled-medicines-1.500532313"
   - ad: "SFDA kontrollü ilaç izin sistemi (Kişisel Yolcu Hesabı)"
     kurum: "Suudi Gıda ve İlaç Kurumu (SFDA)"
     url: "https://cds.sfda.gov.sa"
@@ -58,9 +58,9 @@ kaynaklar:
   - ad: "Bebek yolcu kuralları"
     kurum: "Türk Hava Yolları"
     url: "https://www.turkishairlines.com/en-us/any-questions/infants-and-children/infant-passenger/"
-  - ad: "Suudi Arabistan'daki ziyaretçiler için bilgi (acil numaralar)"
-    kurum: "Birleşik Krallık Hükümeti"
-    url: "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1035960/Visitors_in_Saudi_Arabia_v7.pdf"
+  - ad: "Suudi Arabistan'da acil numaralar ve hizmetler"
+    kurum: "Expatica"
+    url: "https://expatica.com/sa/healthcare/healthcare-basics/emergency-numbers-and-services-in-saudi-arabia-70990"
 ---
 
 Umre bedenle yapılan bir ibadettir: günde kilometrelerce yürüyüş, kalabalık, sıcak ve tempolu bir program. Küçük bir sağlık hazırlığı, oradaki her gününüzün kalitesini belirler.
@@ -86,11 +86,11 @@ Suudi Arabistan Sağlık Bakanlığı, **1 yaşından büyük tüm umre ve hac z
 
 ## İlaç götürüyorsanız: SFDA izni
 
-<div class="callout warn"><strong>1 Kasım 2025'ten itibaren yeni kural:</strong> Narkotik veya psikotrop madde içeren ilaçlarla Suudi Arabistan'a girmek için önceden çevrimiçi izin (clearance) almak zorunludur. Reçete tek başına yetmez; izinsiz getirilen ilaca el konabilir.</div>
+<div class="callout warn"><strong>Yeni kural:</strong> Suudi Gıda ve İlaç Kurumu (SFDA), narkotik veya psikotrop madde içeren ilaçlarla Suudi Arabistan'a girişte önceden çevrimiçi izin (clearance) şartı uygulamaktadır; kural hac, umre ve turist ziyaretçileri kapsar. Reçete tek başına yetmez; izinsiz getirilen ilaca el konabilir.</div>
 
 - **Hangi ilaçlar?** Bazı güçlü ağrı kesiciler, uyku ilaçları, kaygı giderici (anksiyolitik) ilaçlar, uyarıcılar ve bazı antidepresanlar. Türkiye'de **yeşil veya kırmızı reçeteyle** verilen bir ilaç kullanıyorsanız durumunuzu mutlaka kontrol edin.{{< k 6 >}}
 - **Nasıl başvurulur?** Suudi Gıda ve İlaç Kurumu'nun [cds.sfda.gov.sa](https://cds.sfda.gov.sa) sitesinde "Kişisel Yolcu Hesabı" açılır. Pasaport kopyası, son 6 ay içinde alınmış reçete veya rapor, ilacın ve kutusunun fotoğrafı yüklenir.{{< k 6 7 >}}
-- **Miktar:** En fazla 30 günlük doz götürülebilir; kalışınız daha kısaysa kalış süreniz kadar.
+- **Miktar:** SFDA'nın açıklamasına göre en fazla 30 günlük doz götürülebilir.{{< k 6 >}}
 - **Zaman:** Başvuruyu yolculuktan birkaç hafta önce yapın.
 - Esrar ve CBD içeren ürünler reçeteli olsa bile yasaktır.
 
