@@ -254,3 +254,80 @@ p { margin: 0 0 1rem; }
   .callout, .prose blockquote, .prose .arabic { background: #fff; border: 1px solid #888; }
   .prose table { display: table; }
 }
+
+/* ---------- Sayfa üstü: konum, özet, içindekiler ---------- */
+.crumbs { font-size: 0.88rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 0.4rem; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--green-700); text-decoration: underline; }
+.page h1 { margin: 0.2rem 0 0.8rem; }
+.lede-sm { font-size: 1.12rem; color: var(--muted); margin-bottom: 0.6rem; }
+.toc {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 0.8rem 1.2rem; margin: 0 0 2rem; font-size: 0.95rem;
+}
+.toc summary { cursor: pointer; font-weight: 600; color: var(--green-900); }
+.toc ul { list-style: none; margin: 0.5rem 0 0; padding: 0; }
+.toc ul ul { padding-left: 1rem; }
+.toc li { margin: 0.25rem 0; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* ---------- Dipnot ve kaynaklar ---------- */
+sup.ref { font-size: 0.7em; line-height: 0; margin-left: 0.1em; }
+sup.ref a { text-decoration: none; font-weight: 600; padding: 0 0.1em; }
+sup.ref a::before { content: "["; } sup.ref a::after { content: "]"; }
+.sources { margin-top: 3rem; padding-top: 1.2rem; border-top: 2px solid var(--line); font-size: 0.93rem; }
+.sources h2 { font-size: 1.25rem; margin: 0 0 0.8rem; }
+.sources ol { padding-left: 1.5rem; margin: 0; }
+.sources li { margin-bottom: 0.45rem; scroll-margin-top: 90px; }
+.sources li:target { background: var(--green-100); border-radius: 6px; }
+.sources a { word-break: break-word; }
+.src-org { color: var(--muted); }
+.src-note { display: block; color: var(--muted); font-size: 0.88rem; }
+.sources-note { color: var(--muted); font-size: 0.85rem; margin-top: 1rem; }
+.prose h2, .prose h3 { scroll-margin-top: 90px; }
+
+/* ---------- Önceki / sonraki ---------- */
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2.5rem; }
+.pager a {
+  display: block; text-decoration: none; color: var(--green-900); font-weight: 600;
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 0.9rem 1.1rem; line-height: 1.35;
+}
+.pager a:hover { border-color: var(--green-500); }
+.pager a span { display: block; font-size: 0.82rem; font-weight: 500; color: var(--muted); margin-bottom: 0.2rem; }
+.pager-next { text-align: right; grid-column: 2; }
+@media (max-width: 600px) { .pager { grid-template-columns: 1fr; } .pager-next { grid-column: 1; } }
+
+/* ---------- Kontrol listesi ---------- */
+.prose li.check-item, .prose li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.3rem; }
+.prose li input[type="checkbox"] { width: 1.05rem; height: 1.05rem; accent-color: var(--green-700); margin-right: 0.5rem; vertical-align: -0.12em; }
+.btn-small { font-size: 0.88rem; padding: 0.45rem 1rem; background: none; cursor: pointer; font-family: inherit; }
+
+/* ---------- Bilgi kutusu türleri ---------- */
+.callout.warn { background: #FFF6E5; border-color: #F0DDB4; }
+.callout.warn::before { content: "!"; font-weight: 700; color: #A86A00; }
+
+/* ---------- Kaynak/video kartları ---------- */
+.res-list { list-style: none; padding: 0 !important; display: grid; gap: 0.8rem; }
+.res-list li { border: 1px solid var(--line); border-radius: var(--radius); padding: 0.85rem 1.1rem; margin: 0; }
+.res-list li strong a { text-decoration: none; }
+.res-list li strong a:hover { text-decoration: underline; }
+.res-list .tag {
+  display: inline-block; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--green-700); background: var(--green-100); border-radius: 999px; padding: 0.05rem 0.55rem; margin-right: 0.4rem; vertical-align: 0.1em;
+}
+.res-list p { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.94rem; }
+
+/* ---------- Program tablosu / zaman çizelgesi ---------- */
+.timeline { list-style: none; padding: 0 !important; border-left: 2px solid var(--line); margin-left: 0.5rem; }
+.timeline li { position: relative; padding: 0 0 1rem 1.4rem; margin: 0; }
+.timeline li::before {
+  content: ""; position: absolute; left: -7px; top: 0.55em; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--bg); border: 2px solid var(--green-500);
+}
+.timeline time, .timeline .when { font-weight: 700; color: var(--green-700); margin-right: 0.4rem; }
+
+@media print {
+  .toc, .pager, .crumbs, .btn-small { display: none !important; }
+  .sources a::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #444; }
+}

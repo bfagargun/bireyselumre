@@ -22,9 +22,21 @@ enableRobotsTXT = true
     pageRef = "/sss"
     weight = 30
   [[menus.main]]
+    name = "Kaynaklar"
+    pageRef = "/kaynaklar"
+    weight = 35
+  [[menus.main]]
     name = "Hakkında"
     pageRef = "/hakkinda"
     weight = 40
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 2
+  ordered = false
+
+[sitemap]
+  changeFreq = "monthly"

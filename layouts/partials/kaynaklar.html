@@ -1,0 +1,15 @@
+{{ with .Params.kaynaklar }}
+<section class="sources" aria-labelledby="kaynaklar-baslik">
+  <h2 id="kaynaklar-baslik">Kaynaklar</h2>
+  <ol>
+    {{ range $i, $k := . }}
+    <li id="kaynak-{{ add $i 1 }}">
+      {{ with $k.url }}<a href="{{ . }}" rel="noopener" target="_blank">{{ $k.ad }}</a>{{ else }}<span>{{ $k.ad }}</span>{{ end }}
+      {{ with $k.kurum }}<span class="src-org"> — {{ . }}</span>{{ end }}
+      {{ with $k.not }}<span class="src-note">{{ . }}</span>{{ end }}
+    </li>
+    {{ end }}
+  </ol>
+  <p class="sources-note">Bağlantılar ilgili kurumların resmî sayfalarına gider. Kurallar ve ücretler değişebildiği için resmî işlemlerde güncel duyurular esastır.</p>
+</section>
+{{ end }}

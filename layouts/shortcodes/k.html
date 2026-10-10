@@ -1,0 +1,3 @@
+{{- /* Dipnot: {{< k 1 >}} veya {{< k 1 3 >}} — sayfanın "kaynaklar" listesindeki numaraya bağlanır */ -}}
+<sup class="ref">{{ range $i, $n := .Params }}{{ if $i }},{{ end }}<a href="#kaynak-{{ $n }}" aria-label="Kaynak {{ $n }}">{{ $n }}</a>{{ end }}</sup>
+{{- /**/ -}}
